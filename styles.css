@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #222;
+  min-height: 100vh;
+}
+header {
+  background: #2d8b6fcc;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.2rem;
+  background: #fffdfde6;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+section {
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #f0f4f3cc;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+form label, form fieldset {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+form fieldset {
+  border: 1px solid #b2dfdb;
+  padding: 0.7rem;
+  border-radius: 7px;
+  margin-top: 0.5rem;
+}
+button, .btn-emprendimiento {
+  width: 100%;
+  min-width: 120px;
+  height: 48px;
+  background: #2d8b6f;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+  transition: background 0.2s;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+button:hover, .btn-emprendimiento:hover {
+  background: #226b54;
+}
+input, select, textarea {
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 0.5em 0.7em;
+  border: 1px solid #b2dfdb;
+  background: #f9fafb;
+  margin-top: 0.2em;
+  box-sizing: border-box;
+}
+input[type="file"] {
+  padding: 0.3em 0;
+  background: none;
+}
+#eventos-lista {
+  margin-top: 1rem;
+}
+.evento {
+  border: 1px solid #b2dfdb;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9fafbcc;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+.evento h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.emprendimiento {
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  margin: 0.7rem 0;
+  padding: 0.7rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.producto-img {
+  max-width: 120px;
+  max-height: 90px;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.producto-fieldset {
+  margin-top: 1rem;
+  border: 2px solid #2d8b6f;
+  border-radius: 8px;
+  background: #e8f5f1cc;
+  padding: 1rem 1.5rem;
+}
+.producto-legend {
+  font-weight: bold;
+  color: #2d8b6f;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+}
+.producto-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  align-items: flex-end;
+}
+.producto-col {
+  flex: 1 1 220px;
+  min-width: 180px;
+}
+.producto-col-precio {
+  flex: 1 1 120px;
+  min-width: 120px;
+}
+.producto-label {
+  font-weight: 500;
+}
+.producto-input {
+  width: 100%;
+  margin-top: 0.2em;
+  padding: 0.4em;
+  border-radius: 4px;
+  border: 1px solid #b2dfdb;
+  font-size: 1em;
+}
+.producto-textarea {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 0.2em;
+  padding: 0.4em;
+  border-radius: 4px;
+  border: 1px solid #b2dfdb;
+  font-size: 1em;
+  resize: vertical;
+}
+.producto-descripcion-row {
+  margin-top: 1rem;
+}
+.producto-foto-row {
+  margin-top: 1rem;
+}
+.producto-input-file {
+  padding: 0.3em 0;
+}
+.producto-ayuda {
+  display: block;
+  color: #226b54;
+  margin-top: 0.2em;
+  font-size: 0.97em;
+}
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    padding: 0.3rem;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  form {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem;
+  }
+  .producto-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .btn-emprendimiento, button {
+    font-size: 1em;
+    padding: 0.7rem;
+    min-width: 100px;
+    height: 44px;
+  }
+  .evento, .emprendimiento {
+    padding: 0.7rem;
+    border-radius: 6px;
+  }
+  .producto-fieldset {
+    padding: 0.7rem 0.5rem;
+    border-radius: 6px;
+  }
+  input, select, textarea {
+    font-size: 1em;
+    padding: 0.4em 0.5em;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    font-size: 0.97em;
+    padding: 1rem 0.3rem;
+    border-radius: 0;
+  }
+  main {
+    margin: 0;
+    padding: 0.1rem;
+    border-radius: 0;
+  }
+  .evento, .emprendimiento {
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.97em;
+  }
+  .producto-fieldset {
+    padding: 0.5rem 0.2rem;
+    border-radius: 4px;
+  }
+  .producto-img {
+    max-width: 90vw;
+    max-height: 120px;
+  }
+} 
